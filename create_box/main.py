@@ -2,7 +2,21 @@
 
 
 def create_box(height, width, character):
-    pass
+    if character == '*':
+        x = ""
+        for i in range(height):
+            x = x + ('*' * width) + "\n"
+        return x
+            
+            
+    elif character == '@':
+        x = ""
+        for i in range(height):
+            x = x + ('@' * width)+ "\n"
+        return x 
+        
+    else:
+        return ("go home")
 
 
 if __name__ == '__main__':
